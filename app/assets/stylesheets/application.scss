@@ -1,0 +1,21 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "points";
+@import "technologies";
+@import "centers";
+@import "zones";
+
+/* Se configura para que exista un margen superior de 50px */
+body {
+  margin-top:40px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}

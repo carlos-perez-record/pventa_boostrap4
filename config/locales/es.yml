@@ -1,0 +1,32 @@
+es:
+  errors:
+    messages:
+      blank: "no puede estar en blanco"
+      invalid: "No es valido"
+
+
+  activerecord:
+    attributes:
+      user:
+        nombre: "Nombre"
+        password: "Contraseña"
+      point:
+        nombre: "Nombre"
+        technology_id: "Tecnologia"
+      technology:
+        id: "ID"
+        descripcion: "Descripcion"
+      center:
+        nombre: "Nombre"
+        zone_id: "Zona"
+
+    errors:
+      models:
+        point:
+          attributes:
+            technology:
+              required: ", el campo es requerido"
+        center:
+          attributes:
+            zone:
+              required: ", el campo es requerido"

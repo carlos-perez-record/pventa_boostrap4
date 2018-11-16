@@ -1,0 +1,18 @@
+<div class="container" id="myDIV">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="page-header">
+        <h1>Puntos de Venta - Zona: Monteria</h1>
+      </div>
+      <div class="points">
+        <% @p.each do |pventa| %>
+        <%= link_to pventa do %><div class="point clearfix" id="clearf" data-toggle="tooltip" title="Clic para mas información de este punto de venta">
+          <div class="point-details">
+            <span class="point-nombre"><%= image_tag(pventa.picture.url, :width => 50, :height => 50) %><b> COD:</b><%= pventa.codigo %>,<b> NOMBRE:</b> <%=pventa.nombre%></span>
+          </div>
+        </div><% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
